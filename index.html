@@ -1,302 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Afi</title>
 
-    <link rel="icon" type="image/ico" href="img/favicon.ico">
+    <link rel="icon" type="image/ico" href="img/favicon.ico" />
 
-    <link rel="stylesheet" href="css/superslides.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/superslides.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&family=Germania+One&family=Hind:wght@300;400;500;600;700&family=IM+Fell+French+Canon:ital@0;1&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+      integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+      integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&family=Germania+One&family=Hind:wght@300;400;500;600;700&family=IM+Fell+French+Canon:ital@0;1&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <div class="loader">
-        <div class="inner"></div>
+      <div class="inner"></div>
     </div>
 
     <div id="slides">
+      <div class="overlay"></div>
 
-        <div class="overlay"></div>
+      <div class="slides-container">
+        <img
+          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTgwOTN8MHwxfHNlYXJjaHwyfHxjb2Rpbmd8ZW58MHx8fHwxNjM0NDc0OTEz&ixlib=rb-1.2.1&q=80&w=1080"
+          alt=""
+        />
+        <img
+          src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTgwOTN8MHwxfHNlYXJjaHwzfHxjb21wdXRlcnxlbnwwfHx8fDE2MzQ0NzQ4ODE&ixlib=rb-1.2.1&q=80&w=1080"
+          alt=""
+        />
+        <img
+          src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTgwOTN8MHwxfHNlYXJjaHw2fHxnYW1lc3xlbnwwfHx8fDE2MzQ0NzUwMjI&ixlib=rb-1.2.1&q=80&w=1080"
+          alt=""
+        />
+        <img
+          src="https://images.unsplash.com/photo-1605792657660-596af9009e82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTgwOTN8MHwxfHNlYXJjaHwzfHxjcnlwdG98ZW58MHx8fHwxNjM0NDc1MTMy&ixlib=rb-1.2.1&q=80&w=1080"
+          alt=""
+        />
+        <img
+          src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTgwOTN8MHwxfHNlYXJjaHw3fHxib29rfGVufDB8fHx8MTYzNDQ2MTI3Nw&ixlib=rb-1.2.1&q=80&w=1080"
+          alt=""
+        />
+        <img
+          src="https://images.unsplash.com/photo-1626326880051-9320471299c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTgwOTN8MHwxfHNlYXJjaHwyOXx8YmFkbWludG9ufGVufDB8fHx8MTYzNDQ3NTU5Mg&ixlib=rb-1.2.1&q=80&w=1080"
+          alt=""
+        />
+        <img
+          src="https://images.unsplash.com/photo-1613376023733-0a73315d9b06?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTgwOTN8MHwxfHNlYXJjaHwyNnx8YW5pbWV8ZW58MHx8fHwxNjM0NDQ1MzY3&ixlib=rb-1.2.1&q=80&w=1080"
+          alt=""
+        />
+      </div>
 
-        <div class="slides-container">
-            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTgwOTN8MHwxfHNlYXJjaHwyfHxjb2Rpbmd8ZW58MHx8fHwxNjM0NDc0OTEz&ixlib=rb-1.2.1&q=80&w=1080" alt="">
-            <img src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTgwOTN8MHwxfHNlYXJjaHwzfHxjb21wdXRlcnxlbnwwfHx8fDE2MzQ0NzQ4ODE&ixlib=rb-1.2.1&q=80&w=1080" alt="">
-            <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTgwOTN8MHwxfHNlYXJjaHw2fHxnYW1lc3xlbnwwfHx8fDE2MzQ0NzUwMjI&ixlib=rb-1.2.1&q=80&w=1080" alt="">
-            <img src="https://images.unsplash.com/photo-1605792657660-596af9009e82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTgwOTN8MHwxfHNlYXJjaHwzfHxjcnlwdG98ZW58MHx8fHwxNjM0NDc1MTMy&ixlib=rb-1.2.1&q=80&w=1080" alt="">
-            <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTgwOTN8MHwxfHNlYXJjaHw3fHxib29rfGVufDB8fHx8MTYzNDQ2MTI3Nw&ixlib=rb-1.2.1&q=80&w=1080" alt="">
-            <img src="https://images.unsplash.com/photo-1626326880051-9320471299c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTgwOTN8MHwxfHNlYXJjaHwyOXx8YmFkbWludG9ufGVufDB8fHx8MTYzNDQ3NTU5Mg&ixlib=rb-1.2.1&q=80&w=1080" alt="">
-            <img src="https://images.unsplash.com/photo-1613376023733-0a73315d9b06?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTgwOTN8MHwxfHNlYXJjaHwyNnx8YW5pbWV8ZW58MHx8fHwxNjM0NDQ1MzY3&ixlib=rb-1.2.1&q=80&w=1080" alt="">
+      <div class="greeting-msg">
+        <p class="msg"></p>
+      </div>
+
+      <div class="title-msg">
+        <div class="heading">
+          <p class="main">Welcome to MyPortfolio</p>
+          <p class="sub"></p>
         </div>
+      </div>
 
-        <div class="greeting-msg">
-            <p class="msg"></p>
-        </div>
-
-        <div class="title-msg">
-
-            <div class="heading">
-                <p class="main">Welcome to MyPortfolio</p>
-                <p class="sub"></p>
-            </div>
-        </div>
-        
-        <nav class="slides-navigation">
-            <a href="#" class="next"></a>
-            <a href="#" class="prev"></a>
-        </nav>
+      <nav class="slides-navigation">
+        <a href="#" class="next"></a>
+        <a href="#" class="prev"></a>
+      </nav>
     </div>
 
-    <div class="nav-wrapper" style="height:80px;">
-        <nav id="navigation" class="navbar navbar-expand-lg" style="height:auto;">
-            <a class="navbar-brand" href="#">AHMAD FAIDZAL IBRAHIM <small>(Afi)</small></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#slides">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+    <div class="nav-wrapper" style="height: 80px">
+      <nav id="navigation" class="navbar navbar-expand-lg" style="height: auto">
+        <a class="navbar-brand" href="#"
+          >AHMAD FAIDZAL IBRAHIM <small>(Afi)</small></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#slides"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
 
     <div id="about" class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="about-image-wrapper">
-                        <img class="about-image" src="./img/profile/mypic.png" alt="My Picture">
-                    </div>
-                </div>
-                <div class="col-md-9">
-                    <h4>My Name is Afi</h4>
-                    <p>Hi there, I'm Ahmad Faidzal Ibrahim from Tangerang, Banten. I currently work as a Flutter Developer at PT Aplikasi Liburan Indonesia (Holigo). My passion is create apps and website. I have experience Flutter Developer more than 1 years, i am focusing myself on mobile apps developer. I have experience programming in many different language such as PHP, Visual Basic, C, Java, Kotlin, JavaScript, and Dart, however some my favorite project involve working in Flutter for Android and IOS.</p>
-                    <a href="file/Cv.pdf" download=""><button class="btn btn-download-resume">DOWNLOAD RESUME</button></a>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="about-image-wrapper">
+              <img
+                class="about-image"
+                src="./img/profile/mypic.png"
+                alt="My Picture"
+              />
             </div>
+          </div>
+          <div class="col-md-9">
+            <h4>My Name is Afi</h4>
+            <p>
+              Hello, I'm Ahmad Faidzal Ibrahim from Tangerang, Banten. I'm
+              currently employed as a Flutter Developer at PT Aplikasi Liburan
+              Indonesia (Holigo). My passion lies in creating apps and websites.
+              With over 3 years of experience as a Flutter Developer, I
+              specialize in mobile app development. While I'm proficient in
+              various programming languages including PHP, Visual Basic, C,
+              Java, Kotlin, JavaScript, and Dart, some of my favorite projects
+              involve working with Flutter for both Android and iOS platforms.
+            </p>
+            <a href="file/Cv.pdf" download=""
+              ><button class="btn btn-download-resume">
+                DOWNLOAD RESUME
+              </button></a
+            >
+          </div>
         </div>
+      </div>
     </div>
 
     <div id="skills" class="section skills-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>TECHNICAL SKILLS</h2>
-                    <p>A representation of my proficiency in each skill</p>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>TECHNICAL SKILLS</h2>
+            <p>A representation of my proficiency in each skill</p>
+          </div>
 
-                <div class="owl-carousel owl-theme">
-                    <div class="skill">
-                        <span class="chart" data-percent="90">
-                            <span class="percent"></span>
-                            <canvas height="152" width="152"></canvas>
-                        </span>
-                        <h4>Flutter</h4>
-                        <p>Used in most of my apps based projects</p>
-                    </div>
-
-                    <div class="skill">
-                        <span class="chart" data-percent="75">
-                            <span class="percent"></span>
-                            <canvas height="152" width="152"></canvas>
-                        </span>
-                        <h4>Firebase</h4>
-                        <p>Used in most of my apps based projects</p>
-                    </div>
-
-                    <div class="skill">
-                        <span class="chart" data-percent="80">
-                            <span class="percent"></span>
-                            <canvas height="152" width="152"></canvas>
-                        </span>
-                        <h4>SQLite</h4>
-                        <p>Used in most of my apps based projects</p>
-                    </div>
-
-                    <div class="skill">
-                        <span class="chart" data-percent="85">
-                            <span class="percent"></span>
-                            <canvas height="152" width="152"></canvas>
-                        </span>
-                        <h4>Java</h4>
-                        <p>Used in most of my apps based projects</p>
-                    </div>
-
-                    <div class="skill">
-                        <span class="chart" data-percent="60">
-                            <span class="percent"></span>
-                            <canvas height="152" width="152"></canvas>
-                        </span>
-                        <h4>Kotlin</h4>
-                        <p>Not Used in most of my apps based projects</p>
-                    </div>
-
-                    <div class="skill">
-                        <span class="chart" data-percent="90">
-                            <span class="percent"></span>
-                            <canvas height="152" width="152"></canvas>
-                        </span>
-                        <h4>PHP</h4>
-                        <p>Used in most of my web based projects</p>
-                    </div>
-
-                    <div class="skill">
-                        <span class="chart" data-percent="90">
-                            <span class="percent"></span>
-                            <canvas height="152" width="152"></canvas>
-                        </span>
-                        <h4>HTML</h4>
-                        <p>Used in most of my web based projects</p>
-                    </div>
-
-                    <div class="skill">
-                        <span class="chart" data-percent="80">
-                            <span class="percent"></span>
-                            <canvas height="152" width="152"></canvas>
-                        </span>
-                        <h4>CSS</h4>
-                        <p>Used in most of my web based projects</p>
-                    </div>
-
-                    <div class="skill">
-                        <span class="chart" data-percent="90">
-                            <span class="percent"></span>
-                            <canvas height="152" width="152"></canvas>
-                        </span>
-                        <h4>MySQL</h4>
-                        <p>Used in most of my web based projects</p>
-                    </div>
-
-                    <div class="skill">
-                        <span class="chart" data-percent="85">
-                            <span class="percent"></span>
-                            <canvas height="152" width="152"></canvas>
-                        </span>
-                        <h4>JavaScript</h4>
-                        <p>Used in most of my web based projects</p>
-                    </div>
-
-                    <div class="skill">
-                        <span class="chart" data-percent="80">
-                            <span class="percent"></span>
-                            <canvas height="152" width="152"></canvas>
-                        </span>
-                        <h4>JQuery</h4>
-                        <p>Used in most of my web based projects</p>
-                    </div>
-
-                    <div class="skill">
-                        <span class="chart" data-percent="75">
-                            <span class="percent"></span>
-                            <canvas height="152" width="152"></canvas>
-                        </span>
-                        <h4>Wordpress</h4>
-                        <p>Used in some of my web based projects</p>
-                    </div>
-
-                    <div class="skill">
-                        <span class="chart" data-percent="85">
-                            <span class="percent"></span>
-                            <canvas height="152" width="152"></canvas>
-                        </span>
-                        <h4>GIT</h4>
-                        <p>Used in some of my web based projects</p>
-                    </div>
-
-                    <div class="skill">
-                        <span class="chart" data-percent="80">
-                            <span class="percent"></span>
-                            <canvas height="152" width="152"></canvas>
-                        </span>
-                        <h4>API</h4>
-                        <p>Used in most of my web and apps based projects</p>
-                    </div>
-
-                    <div class="skill">
-                        <span class="chart" data-percent="90">
-                            <span class="percent"></span>
-                            <canvas height="152" width="152"></canvas>
-                        </span>
-                        <h4>Figma</h4>
-                        <p>Used in most of my web and apps based projects</p>
-                    </div>
-
-                    <div class="skill">
-                        <span class="chart" data-percent="55">
-                            <span class="percent"></span>
-                            <canvas height="152" width="152"></canvas>
-                        </span>
-                        <h4>NodeJS</h4>
-                        <p>I'm new on this framework</p>
-                    </div>
-
-                    <div class="skill">
-                        <span class="chart" data-percent="60">
-                            <span class="percent"></span>
-                            <canvas height="152" width="152"></canvas>
-                        </span>
-                        <h4>MongoDB</h4>
-                        <p>I'm new on this database</p>
-                    </div>
-
-                    <div class="skill">
-                        <span class="chart" data-percent="40">
-                            <span class="percent"></span>
-                            <canvas height="152" width="152"></canvas>
-                        </span>
-                        <h4>ReactJS</h4>
-                        <p>I'm new on this framework</p>
-                    </div>
-
-                </div>
+          <div class="owl-carousel owl-theme">
+            <div class="skill">
+              <span class="chart" data-percent="90">
+                <span class="percent"></span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>Flutter</h4>
+              <p>Used in most of my apps based projects</p>
             </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="75">
+                <span class="percent"></span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>Firebase</h4>
+              <p>Used in most of my apps based projects</p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="80">
+                <span class="percent"></span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>SQLite</h4>
+              <p>Used in most of my apps based projects</p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="85">
+                <span class="percent"></span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>Java</h4>
+              <p>Used in most of my apps based projects</p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="60">
+                <span class="percent"></span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>Kotlin</h4>
+              <p>Not Used in most of my apps based projects</p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="90">
+                <span class="percent"></span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>PHP</h4>
+              <p>Used in most of my web based projects</p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="90">
+                <span class="percent"></span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>HTML</h4>
+              <p>Used in most of my web based projects</p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="80">
+                <span class="percent"></span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>CSS</h4>
+              <p>Used in most of my web based projects</p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="90">
+                <span class="percent"></span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>MySQL</h4>
+              <p>Used in most of my web based projects</p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="85">
+                <span class="percent"></span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>JavaScript</h4>
+              <p>Used in most of my web based projects</p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="80">
+                <span class="percent"></span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>JQuery</h4>
+              <p>Used in most of my web based projects</p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="75">
+                <span class="percent"></span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>Wordpress</h4>
+              <p>Used in some of my web based projects</p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="85">
+                <span class="percent"></span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>GIT</h4>
+              <p>Used in some of my web based projects</p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="80">
+                <span class="percent"></span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>API</h4>
+              <p>Used in most of my web and apps based projects</p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="90">
+                <span class="percent"></span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>Figma</h4>
+              <p>Used in most of my web and apps based projects</p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="55">
+                <span class="percent"></span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>NodeJS</h4>
+              <p>I'm new on this framework</p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="60">
+                <span class="percent"></span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>MongoDB</h4>
+              <p>I'm new on this database</p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="40">
+                <span class="percent"></span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>ReactJS</h4>
+              <p>I'm new on this framework</p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <div id="stats" class="section stats-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="square-item">
-                        <div class="square-inner-container">
-                            <div class="square-icon">
-                                <i class="fas fa-calendar"></i>
-                            </div>
-                            <div class="square-content">
-                                <h2 class="counter">1</h2>
-                                <h3>Years Experiences</h3>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="square-item">
+              <div class="square-inner-container">
+                <div class="square-icon">
+                  <i class="fas fa-calendar"></i>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="square-content">
+                  <h2 class="counter">3</h2>
+                  <h3>Years Experiences</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-md-3 col-sm-6">
                     <div class="square-item">
                         <div class="square-inner-container">
                             <div class="square-icon">
@@ -308,532 +379,953 @@
                             </div>
                         </div>
                     </div>
+                </div> -->
+          <div class="col-md-4 col-sm-6">
+            <div class="square-item">
+              <div class="square-inner-container">
+                <div class="square-icon">
+                  <i class="icon-flutter"></i>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="square-item">
-                        <div class="square-inner-container">
-                            <div class="square-icon">
-                                <i class="icon-flutter"></i>
-                            </div>
-                            <div class="square-content">
-                                <h2 class="counter">1</h2>
-                                <h3>Flutter Apps</h3>
-                            </div>
-                        </div>
-                    </div>
+                <div class="square-content">
+                  <h2 class="counter">2</h2>
+                  <h3>Flutter Apps</h3>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="square-item">
-                        <div class="square-inner-container">
-                            <div class="square-icon">
-                                <i class="far fa-window-maximize"></i>
-                            </div>
-                            <div class="square-content">
-                                <h2 class="counter">5</h2>
-                                <h3>Website Made</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="square-item">
+              <div class="square-inner-container">
+                <div class="square-icon">
+                  <i class="far fa-window-maximize"></i>
+                </div>
+                <div class="square-content">
+                  <h2 class="counter">5</h2>
+                  <h3>Website Made</h3>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <div id="contact" class="section contact-section">
-        <div class="col-md-12 text-center">
-            <p class="sub-heading">Like what you see?</p>
-            <h2>I'd love to hear from you!</h2>
-            <a href="mailTo:ahmadfaizal.i.afi@gmail.com" class="contact-button">GET IN TOUCH!</a>
-        </div>
+      <div class="col-md-12 text-center">
+        <p class="sub-heading">Like what you see?</p>
+        <h2>I'd love to hear from you!</h2>
+        <a href="mailTo:ahmadfaizal.i.afi@gmail.com" class="contact-button"
+          >GET IN TOUCH!</a
+        >
+      </div>
     </div>
 
     <div id="portfolio" class="section portfolio-section">
-        <div class="container">
-            <div class="row">
-                <div class="heading">
-                    <h2>PORTFOLIO</h2>
-                    <p>The things that I worked it</p>
+      <div class="container">
+        <div class="row">
+          <div class="heading">
+            <h2>PORTFOLIO</h2>
+            <p>The things that I worked it</p>
+          </div>
+          <div class="filter">
+            <ul id="filters">
+              <li><a href="" data-filter="*" class="current">ALL</a></li>
+              <li><a href="" data-filter=".me">ME</a></li>
+              <li><a href="" data-filter=".apps">APPS</a></li>
+              <li><a href="" data-filter=".website">WEBSITE</a></li>
+              <li><a href="" data-filter=".certification">CERTIFICATION</a></li>
+            </ul>
+          </div>
+
+          <div class="items-container">
+            <ul class="items">
+              <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <div class="item-image">
+                    <img src="./img/apps/holigo.png" alt="My Image" />
+                  </div>
+                  <div class="icons">
+                    <a
+                      href="./img/apps/holigo.png"
+                      title="View Image"
+                      class="open-image"
+                      data-fancybox
+                      data-caption="Apps Kemanaa using Flutter"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <a
+                      href="./img/apps/holigo.png"
+                      data-toggle="lightbox"
+                      data-gallery="example-gallery"
+                      title="View Images"
+                      class="see-gallery"
+                    >
+                      <i class="far fa-images"></i>
+                    </a>
+                    <a href="" target="_blank" class="project-link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="image-overlay"></div>
                 </div>
-                <div class="filter">
-                    <ul id="filters">
-                        <li><a href="" data-filter="*" class="current">ALL</a></li>
-                        <li><a href="" data-filter=".me">ME</a></li>
-                        <li><a href="" data-filter=".apps">APPS</a></li>
-                        <li><a href="" data-filter=".website">WEBSITE</a></li>
-                        <li><a href="" data-filter=".certification">CERTIFICATION</a></li>
-                    </ul>
+              </li>
+
+              <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <div class="item-image">
+                    <img
+                      src="./img/apps/pic_apps_kemanaa_1.jpg"
+                      alt="My Image"
+                    />
+                  </div>
+                  <div class="icons">
+                    <a
+                      href="./img/apps/pic_apps_kemanaa_1.jpg"
+                      title="View Image"
+                      class="open-image"
+                      data-fancybox
+                      data-caption="Apps Kemanaa using Flutter"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <a
+                      href="./img/apps/pic_apps_kemanaa_1.jpg"
+                      data-toggle="lightbox"
+                      data-gallery="example-gallery"
+                      title="View Images"
+                      class="see-gallery"
+                    >
+                      <i class="far fa-images"></i>
+                    </a>
+                    <a href="" target="_blank" class="project-link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="image-overlay"></div>
                 </div>
+              </li>
 
-                <div class="items-container">
-                    <ul class="items">
-                        <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <div class="item-image">
-                                    <img src="./img/apps/pic_apps_kemanaa_1.jpg" alt="My Image">
-                                </div>
-                                <div class="icons">
-                                    <a href="./img/apps/pic_apps_kemanaa_1.jpg" title="View Image" class="open-image" data-fancybox data-caption="Apps Kemanaa using Flutter">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                    <a href="./img/apps/pic_apps_kemanaa_1.jpg"  data-toggle="lightbox" data-gallery="example-gallery" title="View Images" class="see-gallery">
-                                        <i class="far fa-images"></i>
-                                    </a>
-                                    <a href="" target="_blank" class="project-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="image-overlay"></div>
-                            </div>
-                        </li>
-
-                        <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <div class="item-image">
-                                    <img src="./img/apps/I Am Bitcoin.png" alt="My Image">
-                                </div>
-                                <div class="icons">
-                                    <a href="./img/apps/I Am Bitcoin.png" title="View Image" class="open-image" data-fancybox data-caption="Simple one page flutter">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                    <a href="./img/apps/I Am Bitcoin.png"  data-toggle="lightbox" data-gallery="example-gallery" title="View Images" class="see-gallery">
-                                        <i class="far fa-images"></i>
-                                    </a>
-                                    <a href="https://github.com/akhmadfaizal/IAmBitcoin" target="_blank" class="project-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="image-overlay"></div>
-                            </div>
-                        </li>
-
-                        <li onclick="" class="website col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <div class="item-image">
-                                    <img src="./img/web/Kemanaa UI 1.jpg" alt="My Image">
-                                </div>
-                                <div class="icons">
-                                    <a href="./img/web/Kemanaa UI 1.jpg" title="View Image" class="open-image" data-fancybox data-caption="Web Kemanaa User Interface">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                    <a href="./img/web/Kemanaa UI 1.jpg"  data-toggle="lightbox" data-gallery="example-gallery" title="View Images" class="see-gallery">
-                                        <i class="far fa-images"></i>
-                                    </a>
-                                    <a href="" target="_blank" class="project-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="image-overlay"></div>
-                            </div>
-                        </li>
-                        
-                        <li onclick="" class="website col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <div class="item-image">
-                                    <img src="./img/web/Kemanaa UI 2.jpg" alt="My Image">
-                                </div>
-                                <div class="icons">
-                                    <a href="./img/web/Kemanaa UI 2.jpg" title="View Image" class="open-image" data-fancybox data-caption="Web Kemanaa User Interface">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                    <a href="./img/web/Kemanaa UI 2.jpg"  data-toggle="lightbox" data-gallery="example-gallery" title="View Images" class="see-gallery">
-                                        <i class="far fa-images"></i>
-                                    </a>
-                                    <a href="" target="_blank" class="project-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="image-overlay"></div>
-                            </div>
-                        </li>
-
-                        <li onclick="" class="website col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <div class="item-image">
-                                    <img src="./img/web/CMS Bootsrap 4.png" alt="My Image">
-                                </div>
-                                <div class="icons">
-                                    <a href="./img/web/CMS Bootsrap 4.png" title="View Image" class="open-image" data-fancybox data-caption="Web CMS using Bootstrap 4">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                    <a href="./img/web/CMS Bootsrap 4.png"  data-toggle="lightbox" data-gallery="example-gallery" title="View Images" class="see-gallery">
-                                        <i class="far fa-images"></i>
-                                    </a>
-                                    <a href="" target="_blank" class="project-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="image-overlay"></div>
-                            </div>
-                        </li>
-
-                        <li onclick="" class="website col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <div class="item-image">
-                                    <img src="./img/web/Form Validator.png" alt="My Image">
-                                </div>
-                                <div class="icons">
-                                    <a href="./img/web/Form Validator.png" title="View Image" class="open-image" data-fancybox data-caption="Form Validator using Vanilla JavaScript">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                    <a href="./img/web/Form Validator.png"  data-toggle="lightbox" data-gallery="example-gallery" title="View Images" class="see-gallery">
-                                        <i class="far fa-images"></i>
-                                    </a>
-                                    <a href="" target="_blank" class="project-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="image-overlay"></div>
-                            </div>
-                        </li>
-
-                        <li onclick="" class="website col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <div class="item-image">
-                                    <img src="./img/web/Photographyx-1.png" alt="My Image">
-                                </div>
-                                <div class="icons">
-                                    <a href="./img/web/Photographyx-1.png" title="View Image" class="open-image" data-fancybox data-caption="Photographyx">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                    <a href="./img/web/Photographyx-1.png"  data-toggle="lightbox" data-gallery="example-gallery" title="View Images" class="see-gallery">
-                                        <i class="far fa-images"></i>
-                                    </a>
-                                    <a href="https://github.com/akhmadfaizal/Photographyx" target="_blank" class="project-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="image-overlay"></div>
-                            </div>
-                        </li>
-
-                        <li onclick="" class="website col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <div class="item-image">
-                                    <img src="./img/web/Photographyx-2.png" alt="My Image">
-                                </div>
-                                <div class="icons">
-                                    <a href="./img/web/Photographyx-2.png" title="View Image" class="open-image" data-fancybox data-caption="Photographyx">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                    <a href="./img/web/Photographyx-2.png"  data-toggle="lightbox" data-gallery="example-gallery" title="View Images" class="see-gallery">
-                                        <i class="far fa-images"></i>
-                                    </a>
-                                    <a href="https://github.com/akhmadfaizal/Photographyx" target="_blank" class="project-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="image-overlay"></div>
-                            </div>
-                        </li>
-
-                        <li onclick="" class="website col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <div class="item-image">
-                                    <img src="./img/web/Photographyx-3.png" alt="My Image">
-                                </div>
-                                <div class="icons">
-                                    <a href="./img/web/Photographyx-3.png" title="View Image" class="open-image" data-fancybox data-caption="Photographyx">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                    <a href="./img/web/Photographyx-3.png"  data-toggle="lightbox" data-gallery="example-gallery" title="View Images" class="see-gallery">
-                                        <i class="far fa-images"></i>
-                                    </a>
-                                    <a href="https://github.com/akhmadfaizal/Photographyx" target="_blank" class="project-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="image-overlay"></div>
-                            </div>
-                        </li>
-
-                        <li onclick="" class="website col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <div class="item-image">
-                                    <img src="./img/web/Portfolio.png" alt="My Image">
-                                </div>
-                                <div class="icons">
-                                    <a href="./img/web/Portfolio.png" title="View Image" class="open-image" data-fancybox data-caption="Portfoilio">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                    <a href="./img/web/Portfolio.png"  data-toggle="lightbox" data-gallery="example-gallery" title="View Images" class="see-gallery">
-                                        <i class="far fa-images"></i>
-                                    </a>
-                                    <a href="" target="_blank" class="project-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="image-overlay"></div>
-                            </div>
-                        </li>
-
-                        <li onclick="" class="certification col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <div class="item-image">
-                                    <img src="./img/certification/Belajar Fundamental Aplikasi Android.jpg" alt="My Image">
-                                </div>
-                                <div class="icons">
-                                    <a href="./img/certification/Belajar Fundamental Aplikasi Android.jpg" title="View Image" class="open-image" data-fancybox data-caption="Certificate Fundamental Application Android Dicoding">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                    <a href="./img/certification/Belajar Fundamental Aplikasi Android.jpg"  data-toggle="lightbox" data-gallery="example-gallery" title="View Images" class="see-gallery">
-                                        <i class="far fa-images"></i>
-                                    </a>
-                                    <a href="" target="_blank" class="project-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="image-overlay"></div>
-                            </div>
-                        </li>
-
-                        <li onclick="" class="certification col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <div class="item-image">
-                                    <img src="./img/certification/Sertifikat Belajar Membuat Aplikasi Android untuk Pemula-1.jpg" alt="My Image">
-                                </div>
-                                <div class="icons">
-                                    <a href="./img/certification/Sertifikat Belajar Membuat Aplikasi Android untuk Pemula-1.jpg" title="View Image" class="open-image" data-fancybox data-caption="Certificate Basic Application Android Dicoding">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                    <a href="./img/certification/Sertifikat Belajar Membuat Aplikasi Android untuk Pemula-1.jpg"  data-toggle="lightbox" data-gallery="example-gallery" title="View Images" class="see-gallery">
-                                        <i class="far fa-images"></i>
-                                    </a>
-                                    <a href="" target="_blank" class="project-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="image-overlay"></div>
-                            </div>
-                        </li>
-
-                        <li onclick="" class="certification col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <div class="item-image">
-                                    <img src="./img/certification/Belajar Membuat Game untuk Pemula-1.jpg" alt="My Image">
-                                </div>
-                                <div class="icons">
-                                    <a href="./img/certification/Belajar Membuat Game untuk Pemula-1.jpg" title="View Image" class="open-image" data-fancybox data-caption="Certificate Basic Game Developer Dicoding">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                    <a href="./img/certification/Belajar Membuat Game untuk Pemula-1.jpg"  data-toggle="lightbox" data-gallery="example-gallery" title="View Images" class="see-gallery">
-                                        <i class="far fa-images"></i>
-                                    </a>
-                                    <a href="" target="_blank" class="project-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="image-overlay"></div>
-                            </div>
-                        </li>
-
-                        <li onclick="" class="certification col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <div class="item-image">
-                                    <img src="./img/certification/Belajar Membuat Aplikasi Flutter untuk Pemula.jpg" alt="My Image">
-                                </div>
-                                <div class="icons">
-                                    <a href="./img/certification/Belajar Membuat Aplikasi Flutter untuk Pemula.jpg" title="View Image" class="open-image" data-fancybox data-caption="Certificate Basic Flutter Developer Dicoding">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                    <a href="./img/certification/Belajar Membuat Aplikasi Flutter untuk Pemula.jpg"  data-toggle="lightbox" data-gallery="example-gallery" title="View Images" class="see-gallery">
-                                        <i class="far fa-images"></i>
-                                    </a>
-                                    <a href="" target="_blank" class="project-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="image-overlay"></div>
-                            </div>
-                        </li>
-
-                        <li onclick="" class="certification col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <div class="item-image">
-                                    <img src="./img/certification/Learn Flutter and Dart to create Android and IOS apps.jpg" alt="My Image">
-                                </div>
-                                <div class="icons">
-                                    <a href="./img/certification/Learn Flutter and Dart to create Android and IOS apps.jpg" title="View Image" class="open-image" data-fancybox data-caption="Certificate Flutter Developer Udemy">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                    <a href="./img/certification/Learn Flutter and Dart to create Android and IOS apps.jpg"  data-toggle="lightbox" data-gallery="example-gallery" title="View Images" class="see-gallery">
-                                        <i class="far fa-images"></i>
-                                    </a>
-                                    <a href="" target="_blank" class="project-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="image-overlay"></div>
-                            </div>
-                        </li>
-
-                        <li onclick="" class="certification col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <div class="item-image">
-                                    <img src="./img/certification/Memulai Pemrograman Dengan Dart.jpg" alt="My Image">
-                                </div>
-                                <div class="icons">
-                                    <a href="./img/certification/Memulai Pemrograman Dengan Dart.jpg" title="View Image" class="open-image" data-fancybox data-caption="Certificate Dart Developer Dicoding">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                    <a href="./img/certification/Memulai Pemrograman Dengan Dart.jpg"  data-toggle="lightbox" data-gallery="example-gallery" title="View Images" class="see-gallery">
-                                        <i class="far fa-images"></i>
-                                    </a>
-                                    <a href="" target="_blank" class="project-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="image-overlay"></div>
-                            </div>
-                        </li>
-
-                        <li onclick="" class="certification col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <div class="item-image">
-                                    <img src="./img/certification/Dasar Pemrograman Web.jpg" alt="My Image">
-                                </div>
-                                <div class="icons">
-                                    <a href="./img/certification/Dasar Pemrograman Web.jpg" title="View Image" class="open-image" data-fancybox data-caption="Certificate Basic Programming Web Dicoding">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                    <a href="./img/certification/Dasar Pemrograman Web.jpg"  data-toggle="lightbox" data-gallery="example-gallery" title="View Images" class="see-gallery">
-                                        <i class="far fa-images"></i>
-                                    </a>
-                                    <a href="" target="_blank" class="project-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="image-overlay"></div>
-                            </div>
-                        </li>
-
-                        <li onclick="" class="certification col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <div class="item-image">
-                                    <img src="./img/certification/PHP for Beginners - Become a PHP Master - CMS Project.jpg" alt="My Image">
-                                </div>
-                                <div class="icons">
-                                    <a href="./img/certification/PHP for Beginners - Become a PHP Master - CMS Project.jpg" title="View Image" class="open-image" data-fancybox data-caption="Certificate PHP Programming Web Udemy">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                    <a href="./img/certification/PHP for Beginners - Become a PHP Master - CMS Project.jpg"  data-toggle="lightbox" data-gallery="example-gallery" title="View Images" class="see-gallery">
-                                        <i class="far fa-images"></i>
-                                    </a>
-                                    <a href="" target="_blank" class="project-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="image-overlay"></div>
-                            </div>
-                        </li>
-
-                        <li onclick="" class="certification col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <div class="item-image">
-                                    <img src="./img/certification/Memulai pemrograman dengan Kotlin.jpg" alt="My Image">
-                                </div>
-                                <div class="icons">
-                                    <a href="./img/certification/Memulai pemrograman dengan Kotlin.jpg" title="View Image" class="open-image" data-fancybox data-caption="Certificate Programming Kotlin Dicoding">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                    <a href="./img/certification/Memulai pemrograman dengan Kotlin.jpg"  data-toggle="lightbox" data-gallery="example-gallery" title="View Images" class="see-gallery">
-                                        <i class="far fa-images"></i>
-                                    </a>
-                                    <a href="" target="_blank" class="project-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="image-overlay"></div>
-                            </div>
-                        </li>
-
-                        <li onclick="" class="certification col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <div class="item-image">
-                                    <img src="./img/certification/Mobile Programming Android & Kotlin.jpg" alt="My Image">
-                                </div>
-                                <div class="icons">
-                                    <a href="./img/certification/Mobile Programming Android & Kotlin.jpg" title="View Image" class="open-image" data-fancybox data-caption="Mobile Programming Android & Kotlin SkillAcademy">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                    <a href="./img/certification/Mobile Programming Android & Kotlin.jpg"  data-toggle="lightbox" data-gallery="example-gallery" title="View Images" class="see-gallery">
-                                        <i class="far fa-images"></i>
-                                    </a>
-                                    <a href="" target="_blank" class="project-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="image-overlay"></div>
-                            </div>
-                        </li>
-
-                        <li onclick="" class="certification col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <div class="item-image">
-                                    <img src="./img/certification/Mastering mobile Programming Android.jpg" alt="My Image">
-                                </div>
-                                <div class="icons">
-                                    <a href="./img/certification/Mastering mobile Programming Android.jpg" title="View Image" class="open-image" data-fancybox data-caption="Mastering mobile Programming SkillAcademy">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                    <a href="./img/certification/Mastering mobile Programming Android.jpg"  data-toggle="lightbox" data-gallery="example-gallery" title="View Images" class="see-gallery">
-                                        <i class="far fa-images"></i>
-                                    </a>
-                                    <a href="" target="_blank" class="project-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="image-overlay"></div>
-                            </div>
-                        </li>
-
-                        <li onclick="" class="certification col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <div class="item-image">
-                                    <img src="./img/certification/Sertifikat-Magang-IKM.jpg" alt="My Image">
-                                </div>
-                                <div class="icons">
-                                    <a href="./img/certification/Sertifikat-Magang-IKM.jpg" title="View Image" class="open-image" data-fancybox data-caption="Certificate Intern">
-                                        <i class="fas fa-search"></i>
-                                    </a>
-                                    <a href="./img/certification/Sertifikat-Magang-IKM.jpg"  data-toggle="lightbox" data-gallery="example-gallery" title="View Images" class="see-gallery">
-                                        <i class="far fa-images"></i>
-                                    </a>
-                                    <a href="" target="_blank" class="project-link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="image-overlay"></div>
-                            </div>
-                        </li>
-
-                    </ul>
+              <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="item">
+                  <div class="item-image">
+                    <img src="./img/apps/I Am Bitcoin.png" alt="My Image" />
+                  </div>
+                  <div class="icons">
+                    <a
+                      href="./img/apps/I Am Bitcoin.png"
+                      title="View Image"
+                      class="open-image"
+                      data-fancybox
+                      data-caption="Simple one page flutter"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <a
+                      href="./img/apps/I Am Bitcoin.png"
+                      data-toggle="lightbox"
+                      data-gallery="example-gallery"
+                      title="View Images"
+                      class="see-gallery"
+                    >
+                      <i class="far fa-images"></i>
+                    </a>
+                    <a
+                      href="https://github.com/akhmadfaizal/IAmBitcoin"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="image-overlay"></div>
                 </div>
-            </div>
+              </li>
+
+              <li
+                onclick=""
+                class="website col-xs-6 col-sm-4 col-md-3 col-lg-3"
+              >
+                <div class="item">
+                  <div class="item-image">
+                    <img src="./img/web/Kemanaa UI 1.jpg" alt="My Image" />
+                  </div>
+                  <div class="icons">
+                    <a
+                      href="./img/web/Kemanaa UI 1.jpg"
+                      title="View Image"
+                      class="open-image"
+                      data-fancybox
+                      data-caption="Web Kemanaa User Interface"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <a
+                      href="./img/web/Kemanaa UI 1.jpg"
+                      data-toggle="lightbox"
+                      data-gallery="example-gallery"
+                      title="View Images"
+                      class="see-gallery"
+                    >
+                      <i class="far fa-images"></i>
+                    </a>
+                    <a href="" target="_blank" class="project-link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="image-overlay"></div>
+                </div>
+              </li>
+
+              <li
+                onclick=""
+                class="website col-xs-6 col-sm-4 col-md-3 col-lg-3"
+              >
+                <div class="item">
+                  <div class="item-image">
+                    <img src="./img/web/Kemanaa UI 2.jpg" alt="My Image" />
+                  </div>
+                  <div class="icons">
+                    <a
+                      href="./img/web/Kemanaa UI 2.jpg"
+                      title="View Image"
+                      class="open-image"
+                      data-fancybox
+                      data-caption="Web Kemanaa User Interface"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <a
+                      href="./img/web/Kemanaa UI 2.jpg"
+                      data-toggle="lightbox"
+                      data-gallery="example-gallery"
+                      title="View Images"
+                      class="see-gallery"
+                    >
+                      <i class="far fa-images"></i>
+                    </a>
+                    <a href="" target="_blank" class="project-link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="image-overlay"></div>
+                </div>
+              </li>
+
+              <li
+                onclick=""
+                class="website col-xs-6 col-sm-4 col-md-3 col-lg-3"
+              >
+                <div class="item">
+                  <div class="item-image">
+                    <img src="./img/web/CMS Bootsrap 4.png" alt="My Image" />
+                  </div>
+                  <div class="icons">
+                    <a
+                      href="./img/web/CMS Bootsrap 4.png"
+                      title="View Image"
+                      class="open-image"
+                      data-fancybox
+                      data-caption="Web CMS using Bootstrap 4"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <a
+                      href="./img/web/CMS Bootsrap 4.png"
+                      data-toggle="lightbox"
+                      data-gallery="example-gallery"
+                      title="View Images"
+                      class="see-gallery"
+                    >
+                      <i class="far fa-images"></i>
+                    </a>
+                    <a href="" target="_blank" class="project-link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="image-overlay"></div>
+                </div>
+              </li>
+
+              <li
+                onclick=""
+                class="website col-xs-6 col-sm-4 col-md-3 col-lg-3"
+              >
+                <div class="item">
+                  <div class="item-image">
+                    <img src="./img/web/Form Validator.png" alt="My Image" />
+                  </div>
+                  <div class="icons">
+                    <a
+                      href="./img/web/Form Validator.png"
+                      title="View Image"
+                      class="open-image"
+                      data-fancybox
+                      data-caption="Form Validator using Vanilla JavaScript"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <a
+                      href="./img/web/Form Validator.png"
+                      data-toggle="lightbox"
+                      data-gallery="example-gallery"
+                      title="View Images"
+                      class="see-gallery"
+                    >
+                      <i class="far fa-images"></i>
+                    </a>
+                    <a href="" target="_blank" class="project-link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="image-overlay"></div>
+                </div>
+              </li>
+
+              <li
+                onclick=""
+                class="website col-xs-6 col-sm-4 col-md-3 col-lg-3"
+              >
+                <div class="item">
+                  <div class="item-image">
+                    <img src="./img/web/Photographyx-1.png" alt="My Image" />
+                  </div>
+                  <div class="icons">
+                    <a
+                      href="./img/web/Photographyx-1.png"
+                      title="View Image"
+                      class="open-image"
+                      data-fancybox
+                      data-caption="Photographyx"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <a
+                      href="./img/web/Photographyx-1.png"
+                      data-toggle="lightbox"
+                      data-gallery="example-gallery"
+                      title="View Images"
+                      class="see-gallery"
+                    >
+                      <i class="far fa-images"></i>
+                    </a>
+                    <a
+                      href="https://github.com/akhmadfaizal/Photographyx"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="image-overlay"></div>
+                </div>
+              </li>
+
+              <li
+                onclick=""
+                class="website col-xs-6 col-sm-4 col-md-3 col-lg-3"
+              >
+                <div class="item">
+                  <div class="item-image">
+                    <img src="./img/web/Photographyx-2.png" alt="My Image" />
+                  </div>
+                  <div class="icons">
+                    <a
+                      href="./img/web/Photographyx-2.png"
+                      title="View Image"
+                      class="open-image"
+                      data-fancybox
+                      data-caption="Photographyx"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <a
+                      href="./img/web/Photographyx-2.png"
+                      data-toggle="lightbox"
+                      data-gallery="example-gallery"
+                      title="View Images"
+                      class="see-gallery"
+                    >
+                      <i class="far fa-images"></i>
+                    </a>
+                    <a
+                      href="https://github.com/akhmadfaizal/Photographyx"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="image-overlay"></div>
+                </div>
+              </li>
+
+              <li
+                onclick=""
+                class="website col-xs-6 col-sm-4 col-md-3 col-lg-3"
+              >
+                <div class="item">
+                  <div class="item-image">
+                    <img src="./img/web/Photographyx-3.png" alt="My Image" />
+                  </div>
+                  <div class="icons">
+                    <a
+                      href="./img/web/Photographyx-3.png"
+                      title="View Image"
+                      class="open-image"
+                      data-fancybox
+                      data-caption="Photographyx"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <a
+                      href="./img/web/Photographyx-3.png"
+                      data-toggle="lightbox"
+                      data-gallery="example-gallery"
+                      title="View Images"
+                      class="see-gallery"
+                    >
+                      <i class="far fa-images"></i>
+                    </a>
+                    <a
+                      href="https://github.com/akhmadfaizal/Photographyx"
+                      target="_blank"
+                      class="project-link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="image-overlay"></div>
+                </div>
+              </li>
+
+              <li
+                onclick=""
+                class="website col-xs-6 col-sm-4 col-md-3 col-lg-3"
+              >
+                <div class="item">
+                  <div class="item-image">
+                    <img src="./img/web/Portfolio.png" alt="My Image" />
+                  </div>
+                  <div class="icons">
+                    <a
+                      href="./img/web/Portfolio.png"
+                      title="View Image"
+                      class="open-image"
+                      data-fancybox
+                      data-caption="Portfoilio"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <a
+                      href="./img/web/Portfolio.png"
+                      data-toggle="lightbox"
+                      data-gallery="example-gallery"
+                      title="View Images"
+                      class="see-gallery"
+                    >
+                      <i class="far fa-images"></i>
+                    </a>
+                    <a href="" target="_blank" class="project-link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="image-overlay"></div>
+                </div>
+              </li>
+
+              <li
+                onclick=""
+                class="certification col-xs-6 col-sm-4 col-md-3 col-lg-3"
+              >
+                <div class="item">
+                  <div class="item-image">
+                    <img
+                      src="./img/certification/Belajar Fundamental Aplikasi Android.jpg"
+                      alt="My Image"
+                    />
+                  </div>
+                  <div class="icons">
+                    <a
+                      href="./img/certification/Belajar Fundamental Aplikasi Android.jpg"
+                      title="View Image"
+                      class="open-image"
+                      data-fancybox
+                      data-caption="Certificate Fundamental Application Android Dicoding"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <a
+                      href="./img/certification/Belajar Fundamental Aplikasi Android.jpg"
+                      data-toggle="lightbox"
+                      data-gallery="example-gallery"
+                      title="View Images"
+                      class="see-gallery"
+                    >
+                      <i class="far fa-images"></i>
+                    </a>
+                    <a href="" target="_blank" class="project-link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="image-overlay"></div>
+                </div>
+              </li>
+
+              <li
+                onclick=""
+                class="certification col-xs-6 col-sm-4 col-md-3 col-lg-3"
+              >
+                <div class="item">
+                  <div class="item-image">
+                    <img
+                      src="./img/certification/Sertifikat Belajar Membuat Aplikasi Android untuk Pemula-1.jpg"
+                      alt="My Image"
+                    />
+                  </div>
+                  <div class="icons">
+                    <a
+                      href="./img/certification/Sertifikat Belajar Membuat Aplikasi Android untuk Pemula-1.jpg"
+                      title="View Image"
+                      class="open-image"
+                      data-fancybox
+                      data-caption="Certificate Basic Application Android Dicoding"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <a
+                      href="./img/certification/Sertifikat Belajar Membuat Aplikasi Android untuk Pemula-1.jpg"
+                      data-toggle="lightbox"
+                      data-gallery="example-gallery"
+                      title="View Images"
+                      class="see-gallery"
+                    >
+                      <i class="far fa-images"></i>
+                    </a>
+                    <a href="" target="_blank" class="project-link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="image-overlay"></div>
+                </div>
+              </li>
+
+              <li
+                onclick=""
+                class="certification col-xs-6 col-sm-4 col-md-3 col-lg-3"
+              >
+                <div class="item">
+                  <div class="item-image">
+                    <img
+                      src="./img/certification/Belajar Membuat Game untuk Pemula-1.jpg"
+                      alt="My Image"
+                    />
+                  </div>
+                  <div class="icons">
+                    <a
+                      href="./img/certification/Belajar Membuat Game untuk Pemula-1.jpg"
+                      title="View Image"
+                      class="open-image"
+                      data-fancybox
+                      data-caption="Certificate Basic Game Developer Dicoding"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <a
+                      href="./img/certification/Belajar Membuat Game untuk Pemula-1.jpg"
+                      data-toggle="lightbox"
+                      data-gallery="example-gallery"
+                      title="View Images"
+                      class="see-gallery"
+                    >
+                      <i class="far fa-images"></i>
+                    </a>
+                    <a href="" target="_blank" class="project-link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="image-overlay"></div>
+                </div>
+              </li>
+
+              <li
+                onclick=""
+                class="certification col-xs-6 col-sm-4 col-md-3 col-lg-3"
+              >
+                <div class="item">
+                  <div class="item-image">
+                    <img
+                      src="./img/certification/Belajar Membuat Aplikasi Flutter untuk Pemula.jpg"
+                      alt="My Image"
+                    />
+                  </div>
+                  <div class="icons">
+                    <a
+                      href="./img/certification/Belajar Membuat Aplikasi Flutter untuk Pemula.jpg"
+                      title="View Image"
+                      class="open-image"
+                      data-fancybox
+                      data-caption="Certificate Basic Flutter Developer Dicoding"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <a
+                      href="./img/certification/Belajar Membuat Aplikasi Flutter untuk Pemula.jpg"
+                      data-toggle="lightbox"
+                      data-gallery="example-gallery"
+                      title="View Images"
+                      class="see-gallery"
+                    >
+                      <i class="far fa-images"></i>
+                    </a>
+                    <a href="" target="_blank" class="project-link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="image-overlay"></div>
+                </div>
+              </li>
+
+              <li
+                onclick=""
+                class="certification col-xs-6 col-sm-4 col-md-3 col-lg-3"
+              >
+                <div class="item">
+                  <div class="item-image">
+                    <img
+                      src="./img/certification/Learn Flutter and Dart to create Android and IOS apps.jpg"
+                      alt="My Image"
+                    />
+                  </div>
+                  <div class="icons">
+                    <a
+                      href="./img/certification/Learn Flutter and Dart to create Android and IOS apps.jpg"
+                      title="View Image"
+                      class="open-image"
+                      data-fancybox
+                      data-caption="Certificate Flutter Developer Udemy"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <a
+                      href="./img/certification/Learn Flutter and Dart to create Android and IOS apps.jpg"
+                      data-toggle="lightbox"
+                      data-gallery="example-gallery"
+                      title="View Images"
+                      class="see-gallery"
+                    >
+                      <i class="far fa-images"></i>
+                    </a>
+                    <a href="" target="_blank" class="project-link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="image-overlay"></div>
+                </div>
+              </li>
+
+              <li
+                onclick=""
+                class="certification col-xs-6 col-sm-4 col-md-3 col-lg-3"
+              >
+                <div class="item">
+                  <div class="item-image">
+                    <img
+                      src="./img/certification/Memulai Pemrograman Dengan Dart.jpg"
+                      alt="My Image"
+                    />
+                  </div>
+                  <div class="icons">
+                    <a
+                      href="./img/certification/Memulai Pemrograman Dengan Dart.jpg"
+                      title="View Image"
+                      class="open-image"
+                      data-fancybox
+                      data-caption="Certificate Dart Developer Dicoding"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <a
+                      href="./img/certification/Memulai Pemrograman Dengan Dart.jpg"
+                      data-toggle="lightbox"
+                      data-gallery="example-gallery"
+                      title="View Images"
+                      class="see-gallery"
+                    >
+                      <i class="far fa-images"></i>
+                    </a>
+                    <a href="" target="_blank" class="project-link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="image-overlay"></div>
+                </div>
+              </li>
+
+              <li
+                onclick=""
+                class="certification col-xs-6 col-sm-4 col-md-3 col-lg-3"
+              >
+                <div class="item">
+                  <div class="item-image">
+                    <img
+                      src="./img/certification/Dasar Pemrograman Web.jpg"
+                      alt="My Image"
+                    />
+                  </div>
+                  <div class="icons">
+                    <a
+                      href="./img/certification/Dasar Pemrograman Web.jpg"
+                      title="View Image"
+                      class="open-image"
+                      data-fancybox
+                      data-caption="Certificate Basic Programming Web Dicoding"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <a
+                      href="./img/certification/Dasar Pemrograman Web.jpg"
+                      data-toggle="lightbox"
+                      data-gallery="example-gallery"
+                      title="View Images"
+                      class="see-gallery"
+                    >
+                      <i class="far fa-images"></i>
+                    </a>
+                    <a href="" target="_blank" class="project-link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="image-overlay"></div>
+                </div>
+              </li>
+
+              <li
+                onclick=""
+                class="certification col-xs-6 col-sm-4 col-md-3 col-lg-3"
+              >
+                <div class="item">
+                  <div class="item-image">
+                    <img
+                      src="./img/certification/PHP for Beginners - Become a PHP Master - CMS Project.jpg"
+                      alt="My Image"
+                    />
+                  </div>
+                  <div class="icons">
+                    <a
+                      href="./img/certification/PHP for Beginners - Become a PHP Master - CMS Project.jpg"
+                      title="View Image"
+                      class="open-image"
+                      data-fancybox
+                      data-caption="Certificate PHP Programming Web Udemy"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <a
+                      href="./img/certification/PHP for Beginners - Become a PHP Master - CMS Project.jpg"
+                      data-toggle="lightbox"
+                      data-gallery="example-gallery"
+                      title="View Images"
+                      class="see-gallery"
+                    >
+                      <i class="far fa-images"></i>
+                    </a>
+                    <a href="" target="_blank" class="project-link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="image-overlay"></div>
+                </div>
+              </li>
+
+              <li
+                onclick=""
+                class="certification col-xs-6 col-sm-4 col-md-3 col-lg-3"
+              >
+                <div class="item">
+                  <div class="item-image">
+                    <img
+                      src="./img/certification/Memulai pemrograman dengan Kotlin.jpg"
+                      alt="My Image"
+                    />
+                  </div>
+                  <div class="icons">
+                    <a
+                      href="./img/certification/Memulai pemrograman dengan Kotlin.jpg"
+                      title="View Image"
+                      class="open-image"
+                      data-fancybox
+                      data-caption="Certificate Programming Kotlin Dicoding"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <a
+                      href="./img/certification/Memulai pemrograman dengan Kotlin.jpg"
+                      data-toggle="lightbox"
+                      data-gallery="example-gallery"
+                      title="View Images"
+                      class="see-gallery"
+                    >
+                      <i class="far fa-images"></i>
+                    </a>
+                    <a href="" target="_blank" class="project-link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="image-overlay"></div>
+                </div>
+              </li>
+
+              <li
+                onclick=""
+                class="certification col-xs-6 col-sm-4 col-md-3 col-lg-3"
+              >
+                <div class="item">
+                  <div class="item-image">
+                    <img
+                      src="./img/certification/Mobile Programming Android & Kotlin.jpg"
+                      alt="My Image"
+                    />
+                  </div>
+                  <div class="icons">
+                    <a
+                      href="./img/certification/Mobile Programming Android & Kotlin.jpg"
+                      title="View Image"
+                      class="open-image"
+                      data-fancybox
+                      data-caption="Mobile Programming Android & Kotlin SkillAcademy"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <a
+                      href="./img/certification/Mobile Programming Android & Kotlin.jpg"
+                      data-toggle="lightbox"
+                      data-gallery="example-gallery"
+                      title="View Images"
+                      class="see-gallery"
+                    >
+                      <i class="far fa-images"></i>
+                    </a>
+                    <a href="" target="_blank" class="project-link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="image-overlay"></div>
+                </div>
+              </li>
+
+              <li
+                onclick=""
+                class="certification col-xs-6 col-sm-4 col-md-3 col-lg-3"
+              >
+                <div class="item">
+                  <div class="item-image">
+                    <img
+                      src="./img/certification/Mastering mobile Programming Android.jpg"
+                      alt="My Image"
+                    />
+                  </div>
+                  <div class="icons">
+                    <a
+                      href="./img/certification/Mastering mobile Programming Android.jpg"
+                      title="View Image"
+                      class="open-image"
+                      data-fancybox
+                      data-caption="Mastering mobile Programming SkillAcademy"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <a
+                      href="./img/certification/Mastering mobile Programming Android.jpg"
+                      data-toggle="lightbox"
+                      data-gallery="example-gallery"
+                      title="View Images"
+                      class="see-gallery"
+                    >
+                      <i class="far fa-images"></i>
+                    </a>
+                    <a href="" target="_blank" class="project-link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="image-overlay"></div>
+                </div>
+              </li>
+
+              <li
+                onclick=""
+                class="certification col-xs-6 col-sm-4 col-md-3 col-lg-3"
+              >
+                <div class="item">
+                  <div class="item-image">
+                    <img
+                      src="./img/certification/Sertifikat-Magang-IKM.jpg"
+                      alt="My Image"
+                    />
+                  </div>
+                  <div class="icons">
+                    <a
+                      href="./img/certification/Sertifikat-Magang-IKM.jpg"
+                      title="View Image"
+                      class="open-image"
+                      data-fancybox
+                      data-caption="Certificate Intern"
+                    >
+                      <i class="fas fa-search"></i>
+                    </a>
+                    <a
+                      href="./img/certification/Sertifikat-Magang-IKM.jpg"
+                      data-toggle="lightbox"
+                      data-gallery="example-gallery"
+                      title="View Images"
+                      class="see-gallery"
+                    >
+                      <i class="far fa-images"></i>
+                    </a>
+                    <a href="" target="_blank" class="project-link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="image-overlay"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="copyright-section">
-        <div class="col-md-12">
-            <p>&copy; Copyright Afi <span id="year"></span> </p>
-        </div>
+      <div class="col-md-12">
+        <p>&copy; Copyright Afi <span id="year"></span></p>
+      </div>
     </div>
+  </body>
 
-</body>
+  <script src="js/countUp.js"></script>
+  <script src="js/countUp-jquery.js"></script>
+  <script src="js/jquery.superslides.min.js"></script>
+  <script src="js/jquery.easypiechart.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/typed.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+    integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+    integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="js/script.js"></script>
 
-
-<script src="js/countUp.js"></script>
-<script src="js/countUp-jquery.js"></script>
-<script src="js/jquery.superslides.min.js"></script>
-<script src="js/jquery.easypiechart.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/typed.min.js"></script>
-<script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="js/script.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
-
-
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"
+  ></script>
 </html>
