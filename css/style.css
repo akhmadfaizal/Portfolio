@@ -143,9 +143,10 @@ body {
 
 /* Navigation */
 #navigation {
-    background-color: #A2D2FF;
+    background-color: #ffffff;
     padding: 20px 10px;
     z-index: 100;
+    border-bottom: 1px solid #eaeaea;
 }
 
 #navigation li {
@@ -153,12 +154,12 @@ body {
 }
 
 #navigation li a {
-    color: white;
+    color: #333;
 }
 
 .navbar-brand,
 .navbar-brand:hover{
-    color: white;
+    color: #333;
 }
 
 .navbar-toggler-icon{
@@ -169,7 +170,7 @@ body {
 .about-image {
     max-width: 100%;
 
-    box-shadow: 10px 10px #A2D2FF;
+    box-shadow: 10px 10px #e6e6e6;
 
     -webkit-transition: all 0.2s linear, 1s;
     -moz-transition: all 0.2s linear, 1s;
@@ -179,7 +180,7 @@ body {
 }
 
 .about-image:hover {
-    box-shadow: -10px -10px #A2D2FF;
+    box-shadow: -10px -10px #e6e6e6;
 
     -webkit-transition: all 0.2s linear, 1s;
     -moz-transition: all 0.2s linear, 1s;
@@ -189,26 +190,26 @@ body {
 }
 
 .btn-download-resume {
-    color: #FFF;
+    color: #333;
     font-weight: 600;
-    border: 2px solid #A2D2FF;
-    background-color: #A2D2FF;
+    border: 2px solid #333;
+    background-color: #FFF;
     border-radius: 0;
     padding: 10px 20px;
     letter-spacing: 1px;
 }
 
 .btn-download-resume:hover {
-    background-color: #FFF;
-    color: #A2D2FF;
+    background-color: #333;
+    color: #FFF;
 
 }
 
 .skills-section,
 .contact-section {
     text-align: center;
-    background-color: #A2D2FF;
-    color: white;
+    background-color: #ffffff;
+    color: #333;
 }
 
 .skill {
@@ -300,7 +301,7 @@ body {
     font-size: 56px;
     margin-bottom: 10px;
     font-weight: 400;
-    color: #A2D2FF;
+    color: #333;
 }
 
 .square-content h3{
@@ -310,18 +311,18 @@ body {
 }
 
 .contact-button {
-    color: #FFF;
+    color: #333;
     padding: 15px 20px;
     display: inline-block;
     margin-top: 20px;
-    border: 1px solid #FFF;
+    border: 1px solid #333;
     border-radius: 2px;
 }
 
 .contact-button:hover{
     text-decoration: none;
-    color: #A2D2FF;
-    background-color: #FFF;
+    color: #FFF;
+    background-color: #333;
 }
 
 /* Portfolio */
@@ -353,8 +354,8 @@ body {
 }
 
 .filter .current {
-    background-color: #A2D2FF;
-    border-color: #A2D2FF;
+    background-color: #333;
+    border-color: #333;
     color: #FFF;
 }
 
@@ -415,7 +416,7 @@ body {
 .items a {
     width: 40px;
     height: 40px;
-    background-color: #A2D2FF;
+    background-color: #333;
     position: relative;
     display: inline-block;
 
@@ -479,17 +480,18 @@ body {
 }
 
 .ekko-lightbox-nav-overlay a:first-child span {
-    color: #A2D2FF;
+    color: #333;
 }
 
 .ekko-lightbox-nav-overlay a:last-child span {
-    color: #A2D2FF;
+    color: #333;
 }
 
 .copyright-section {
-    background-color: #444;
-    color: #FFF;
+    background-color: #ffffff;
+    color: #333;
     padding: 30px 5px;
+    border-top: 1px solid #eaeaea;
 }
 
 .copyright-section p {

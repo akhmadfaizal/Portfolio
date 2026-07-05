@@ -93,7 +93,7 @@ $(document).ready(function(){
         if(window.pageYOffset > skillsTopOffset - $(window).height() + 200){
             $('.chart').easyPieChart({
                 easing: 'easeInOut',
-                barColor: '#FFF',
+                barColor: '#333',
                 trackColor: false,
                 scaleColor: false,
                 lineWidth: 4,
@@ -169,4 +169,3 @@ $(document).ready(function(){
     $(window).on('resize', changeText);
     
 });
-
