@@ -93,7 +93,7 @@ $(document).ready(function(){
         if(window.pageYOffset > skillsTopOffset - $(window).height() + 200){
             $('.chart').easyPieChart({
                 easing: 'easeInOut',
-                barColor: '#333',
+                barColor: '#16150f',
                 trackColor: false,
                 scaleColor: false,
                 lineWidth: 4,
@@ -167,5 +167,38 @@ $(document).ready(function(){
         }
     }
     $(window).on('resize', changeText);
-    
+
+    // Scroll reveal (IntersectionObserver, honours reduced-motion)
+    var prefersReduced = window.matchMedia &&
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    var revealTargets = [
+        '#about .col-md-5', '#about .col-md-7',
+        '.skills-section .col-md-12',
+        '.stats-section .col-md-4',
+        '.contact-section .col-md-12',
+        '.portfolio-section .heading', '.portfolio-section .filter'
+    ].join(', ');
+
+    var $reveal = $(revealTargets);
+
+    if (prefersReduced || !('IntersectionObserver' in window)) {
+        $reveal.addClass('reveal is-visible');
+    } else {
+        $reveal.addClass('reveal');
+        var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+
+        $reveal.each(function (i) {
+            this.style.transitionDelay = (i % 3) * 0.08 + 's';
+            io.observe(this);
+        });
+    }
+
 });
