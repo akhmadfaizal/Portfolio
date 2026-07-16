@@ -1,13 +1,49 @@
 {
   "items": [
-    { "image": "/img/gallery/holigo.png", "alt": "Holigo app", "caption": "Holigo - Flutter travel app" },
-    { "image": "/img/gallery/kemanaa-web-1.jpg", "alt": "Kemanaa web UI", "caption": "Kemanaa - Web UI" },
-    { "image": "/img/gallery/kemanaa-app.jpg", "alt": "Kemanaa app", "caption": "Kemanaa - Flutter app" },
-    { "image": "/img/gallery/i-am-bitcoin.png", "alt": "I Am Bitcoin app", "caption": "I Am Bitcoin - Flutter concept app" },
-    { "image": "/img/gallery/photographyx-2.png", "alt": "Photographyx site", "caption": "Photographyx" },
-    { "image": "/img/gallery/cms-bootstrap.png", "alt": "Bootstrap CMS", "caption": "Bootstrap CMS" },
-    { "image": "/img/gallery/kemanaa-web-2.jpg", "alt": "Kemanaa web UI", "caption": "Kemanaa - Web UI" },
-    { "image": "/img/gallery/form-validator.png", "alt": "Form Validator", "caption": "Form Validator" },
-    { "image": "/img/gallery/photographyx-3.png", "alt": "Photographyx site", "caption": "Photographyx" }
+    {
+      "image": "/img/gallery/items/0/image.png",
+      "alt": "Holigo app",
+      "caption": "Holigo - Flutter travel app"
+    },
+    {
+      "image": "/img/gallery/items/1/image.jpg",
+      "alt": "Kemanaa web UI",
+      "caption": "Kemanaa - Web UI"
+    },
+    {
+      "image": "/img/gallery/items/2/image.jpg",
+      "alt": "Kemanaa app",
+      "caption": "Kemanaa - Flutter app"
+    },
+    {
+      "image": "/img/gallery/items/3/image.png",
+      "alt": "I Am Bitcoin app",
+      "caption": "I Am Bitcoin - Flutter concept app"
+    },
+    {
+      "image": "/img/gallery/items/4/image.png",
+      "alt": "Photographyx site",
+      "caption": "Photographyx"
+    },
+    {
+      "image": "/img/gallery/items/5/image.png",
+      "alt": "Bootstrap CMS",
+      "caption": "Bootstrap CMS"
+    },
+    {
+      "image": "/img/gallery/items/6/image.jpg",
+      "alt": "Kemanaa web UI",
+      "caption": "Kemanaa - Web UI"
+    },
+    {
+      "image": "/img/gallery/items/7/image.png",
+      "alt": "Form Validator",
+      "caption": "Form Validator"
+    },
+    {
+      "image": "/img/gallery/items/8/image.png",
+      "alt": "Photographyx site",
+      "caption": "Photographyx"
+    }
   ]
 }
