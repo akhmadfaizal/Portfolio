@@ -1,4 +1,5 @@
 import { defineCollection, z } from "astro:content";
+import { glob } from "astro/loaders";
 
 // A link shown under an entry. `lightbox: true` opens `href` (an image path)
 // in the on-page viewer; otherwise it is a normal external link.
@@ -12,13 +13,13 @@ const link = z.object({
 const tags = z.array(z.string()).default([]);
 
 const projects = defineCollection({
-  type: "data",
+  loader: glob({ pattern: "**/*.json", base: "./src/content/projects" }),
   schema: z.object({
     order: z.number(),
     title: z.string(),
-    category: z.string(), // left meta column, e.g. "Mobile"
-    badge: z.string(), // highlighted lead in the venue line
-    venue: z.string(), // rest of the venue line
+    category: z.string(),
+    badge: z.string(),
+    venue: z.string(),
     description: z.string(),
     contributions: z
       .array(z.object({ title: z.string().optional(), text: z.string() }))
@@ -29,10 +30,10 @@ const projects = defineCollection({
 });
 
 const experience = defineCollection({
-  type: "data",
+  loader: glob({ pattern: "**/*.json", base: "./src/content/experience" }),
   schema: z.object({
     order: z.number(),
-    period: z.string(), // left meta column, e.g. "2022 - 2026"
+    period: z.string(),
     role: z.string(),
     company: z.string(),
     location: z.string().optional(),
@@ -42,7 +43,7 @@ const experience = defineCollection({
 });
 
 const education = defineCollection({
-  type: "data",
+  loader: glob({ pattern: "**/*.json", base: "./src/content/education" }),
   schema: z.object({
     order: z.number(),
     period: z.string(),
@@ -54,10 +55,10 @@ const education = defineCollection({
 });
 
 const certifications = defineCollection({
-  type: "data",
+  loader: glob({ pattern: "**/*.json", base: "./src/content/certifications" }),
   schema: z.object({
     order: z.number(),
-    meta: z.string(), // left column, e.g. "Dicoding · 2025 - 2026"
+    meta: z.string(),
     title: z.string(),
     description: z.string(),
     links: z.array(link).default([]),
@@ -65,14 +66,4 @@ const certifications = defineCollection({
   }),
 });
 
-const gallery = defineCollection({
-  type: "data",
-  schema: z.object({
-    order: z.number(),
-    image: z.string(),
-    alt: z.string(),
-    caption: z.string(),
-  }),
-});
-
-export const collections = { projects, experience, education, certifications, gallery };
+export const collections = { projects, experience, education, certifications };

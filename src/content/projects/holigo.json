@@ -31,5 +31,10 @@
       "caption": "Holigo - Flutter travel app"
     }
   ],
-  "tags": ["Flutter", "GetX", "REST API", "Firebase"]
+  "tags": [
+    "Flutter",
+    "GetX",
+    "REST API",
+    "Firebase"
+  ]
 }

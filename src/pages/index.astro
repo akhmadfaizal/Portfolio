@@ -4,6 +4,7 @@ import { getCollection } from "astro:content";
 import site from "../data/site.json";
 import about from "../data/about.json";
 import skills from "../data/skills.json";
+import gallery from "../data/gallery.json";
 
 const byOrder = (a: { data: { order: number } }, b: { data: { order: number } }) =>
   a.data.order - b.data.order;
@@ -12,7 +13,6 @@ const projects = (await getCollection("projects")).sort(byOrder);
 const experience = (await getCollection("experience")).sort(byOrder);
 const education = (await getCollection("education")).sort(byOrder);
 const certifications = (await getCollection("certifications")).sort(byOrder);
-const gallery = (await getCollection("gallery")).sort(byOrder);
 
 const year = new Date().getFullYear();
 
@@ -236,9 +236,9 @@ const nav = [
         <h2 class="section-title">Gallery</h2>
         <div class="gallery reveal">
           {
-            gallery.map((g) => (
-              <a href={g.data.image} data-lightbox data-caption={g.data.caption}>
-                <img src={g.data.image} alt={g.data.alt} loading="lazy" />
+            gallery.items.map((g) => (
+              <a href={g.image} data-lightbox data-caption={g.caption}>
+                <img src={g.image} alt={g.alt} loading="lazy" />
               </a>
             ))
           }
