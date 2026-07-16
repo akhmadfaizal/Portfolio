@@ -168,11 +168,21 @@ export default config({
       schema: {
         items: fields.array(
           fields.object({
-            image: fields.text({ label: "Image path" }),
-            alt: fields.text({ label: "Alt text" }),
-            caption: fields.text({ label: "Caption" }),
+            image: fields.image({
+              label: "Image",
+              description:
+                "Upload a picture; the path is filled in automatically.",
+              directory: "public/img/gallery",
+              publicPath: "/img/gallery/",
+              validation: { isRequired: true },
+            }),
+            alt: fields.text({ label: "Alt text (optional)" }),
+            caption: fields.text({ label: "Caption (optional)" }),
           }),
-          { label: "Images", itemLabel: (p) => p.fields.caption.value }
+          {
+            label: "Images",
+            itemLabel: (p) => p.fields.caption.value || p.fields.alt.value,
+          }
         ),
       },
     }),

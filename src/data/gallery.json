@@ -1,13 +1,13 @@
 {
   "items": [
-    { "image": "/img/apps/holigo.png", "alt": "Holigo app", "caption": "Holigo - Flutter travel app" },
-    { "image": "/img/web/Kemanaa UI 1.jpg", "alt": "Kemanaa web UI", "caption": "Kemanaa - Web UI" },
-    { "image": "/img/apps/pic_apps_kemanaa_1.jpg", "alt": "Kemanaa app", "caption": "Kemanaa - Flutter app" },
-    { "image": "/img/apps/I Am Bitcoin.png", "alt": "I Am Bitcoin app", "caption": "I Am Bitcoin - Flutter concept app" },
-    { "image": "/img/web/Photographyx-2.png", "alt": "Photographyx site", "caption": "Photographyx" },
-    { "image": "/img/web/CMS Bootsrap 4.png", "alt": "Bootstrap CMS", "caption": "Bootstrap CMS" },
-    { "image": "/img/web/Kemanaa UI 2.jpg", "alt": "Kemanaa web UI", "caption": "Kemanaa - Web UI" },
-    { "image": "/img/web/Form Validator.png", "alt": "Form Validator", "caption": "Form Validator" },
-    { "image": "/img/web/Photographyx-3.png", "alt": "Photographyx site", "caption": "Photographyx" }
+    { "image": "/img/gallery/holigo.png", "alt": "Holigo app", "caption": "Holigo - Flutter travel app" },
+    { "image": "/img/gallery/kemanaa-web-1.jpg", "alt": "Kemanaa web UI", "caption": "Kemanaa - Web UI" },
+    { "image": "/img/gallery/kemanaa-app.jpg", "alt": "Kemanaa app", "caption": "Kemanaa - Flutter app" },
+    { "image": "/img/gallery/i-am-bitcoin.png", "alt": "I Am Bitcoin app", "caption": "I Am Bitcoin - Flutter concept app" },
+    { "image": "/img/gallery/photographyx-2.png", "alt": "Photographyx site", "caption": "Photographyx" },
+    { "image": "/img/gallery/cms-bootstrap.png", "alt": "Bootstrap CMS", "caption": "Bootstrap CMS" },
+    { "image": "/img/gallery/kemanaa-web-2.jpg", "alt": "Kemanaa web UI", "caption": "Kemanaa - Web UI" },
+    { "image": "/img/gallery/form-validator.png", "alt": "Form Validator", "caption": "Form Validator" },
+    { "image": "/img/gallery/photographyx-3.png", "alt": "Photographyx site", "caption": "Photographyx" }
   ]
 }
