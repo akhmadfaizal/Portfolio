@@ -1,9 +1,12 @@
 import { config, fields, collection, singleton } from "@keystatic/core";
 
-// Phase 1 step 5: local mode. Step 6 switches storage to GitHub mode
-// (auto-commit) once the GitHub App and Vercel deploy are set up.
+// Local dev uses local mode (edits files directly, no secrets needed).
+// Production (Vercel) uses GitHub mode: the admin UI commits to the repo via a
+// GitHub App. See docs/adr/0002-keystatic-git-based-cms.md and .env.example.
 export default config({
-  storage: { kind: "local" },
+  storage: import.meta.env.DEV
+    ? { kind: "local" }
+    : { kind: "github", repo: "akhmadfaizal/Portfolio" },
 
   ui: {
     brand: { name: "Afi Portfolio" },
