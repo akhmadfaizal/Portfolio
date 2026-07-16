@@ -1,3 +1,9 @@
 {
-  "items": []
+  "items": [
+    {
+      "image": "/img/gallery/items/0/image.avif",
+      "alt": "haaland",
+      "caption": "haaland"
+    }
+  ]
 }
