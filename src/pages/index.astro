@@ -1,0 +1,254 @@
+---
+import Base from "../layouts/Base.astro";
+import { getCollection } from "astro:content";
+import site from "../data/site.json";
+import about from "../data/about.json";
+import skills from "../data/skills.json";
+
+const byOrder = (a: { data: { order: number } }, b: { data: { order: number } }) =>
+  a.data.order - b.data.order;
+
+const projects = (await getCollection("projects")).sort(byOrder);
+const experience = (await getCollection("experience")).sort(byOrder);
+const education = (await getCollection("education")).sort(byOrder);
+const certifications = (await getCollection("certifications")).sort(byOrder);
+const gallery = (await getCollection("gallery")).sort(byOrder);
+
+const year = new Date().getFullYear();
+
+const nav = [
+  ["about", "About"],
+  ["projects", "Projects"],
+  ["experience", "Experience"],
+  ["education", "Education"],
+  ["skills", "Skills"],
+  ["certifications", "Certifications"],
+  ["gallery", "Gallery"],
+];
+---
+
+<Base>
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <a class="brand" href="#top">{site.name}</a>
+      <p class="brand-sub">{site.brandSub}</p>
+
+      <nav class="nav" aria-label="Section navigation">
+        {nav.map(([id, label]) => <a href={`#${id}`}>{label}</a>)}
+      </nav>
+
+      <div class="zh-mark" aria-hidden="true">
+        <span class="zh-chars">{site.wordmark.chars}</span>
+        <span class="zh-label">{site.wordmark.pinyin}</span>
+      </div>
+
+      <div class="social">
+        {
+          site.socials.map((s, i) => (
+            <>
+              {i > 0 && <span class="sep">/</span>}
+              <a
+                href={s.href}
+                {...(s.href.startsWith("http")
+                  ? { target: "_blank", rel: "noopener" }
+                  : {})}
+              >
+                {s.label}
+              </a>
+            </>
+          ))
+        }
+      </div>
+    </aside>
+
+    <!-- Content -->
+    <main class="content">
+      <!-- About -->
+      <section id="about">
+        <h1 class="hero-name">{about.name}</h1>
+        <p class="hero-role">
+          {
+            about.roleParts.map((p, i) => (
+              <>
+                {i > 0 && " · "}
+                {p.strong ? <strong>{p.text}</strong> : p.text}
+              </>
+            ))
+          }
+        </p>
+        <div class="bio reveal">
+          {about.bio.map((para) => <p>{para}</p>)}
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="entry-list">
+          {
+            projects.map((p) => (
+              <article class="entry reveal">
+                <div class="entry-meta">{p.data.category}</div>
+                <div class="entry-body">
+                  <h3 class="entry-title">{p.data.title}</h3>
+                  <p class="entry-venue">
+                    <span class="badge">{p.data.badge}</span> · {p.data.venue}
+                  </p>
+                  <p class="entry-desc">{p.data.description}</p>
+                  {p.data.contributions.length > 0 && (
+                    <ul class="contrib">
+                      {p.data.contributions.map((c) => (
+                        <li>
+                          {c.title && <strong>{c.title}</strong>}
+                          {c.title ? ` - ${c.text}` : c.text}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  {p.data.links.length > 0 && (
+                    <div class="links">
+                      {p.data.links.map((l) =>
+                        l.lightbox ? (
+                          <a href={l.href} data-lightbox data-caption={l.caption}>
+                            {l.label}
+                          </a>
+                        ) : (
+                          <a href={l.href} target="_blank" rel="noopener">
+                            {l.label}
+                          </a>
+                        )
+                      )}
+                    </div>
+                  )}
+                  {p.data.tags.length > 0 && (
+                    <div class="tags">
+                      {p.data.tags.map((t) => <span class="tag">{t}</span>)}
+                    </div>
+                  )}
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="entry-list">
+          {
+            experience.map((e) => (
+              <article class="entry reveal">
+                <div class="entry-meta">{e.data.period}</div>
+                <div class="entry-body">
+                  <h3 class="entry-title">{e.data.role}</h3>
+                  <p class="entry-venue">
+                    <span class="badge">{e.data.company}</span>
+                    {e.data.location ? ` · ${e.data.location}` : ""}
+                  </p>
+                  <p class="entry-desc">{e.data.description}</p>
+                  {e.data.tags.length > 0 && (
+                    <div class="tags">
+                      {e.data.tags.map((t) => <span class="tag">{t}</span>)}
+                    </div>
+                  )}
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="entry-list">
+          {
+            education.map((e) => (
+              <article class="entry reveal">
+                <div class="entry-meta">{e.data.period}</div>
+                <div class="entry-body">
+                  <h3 class="entry-title">{e.data.degree}</h3>
+                  <p class="entry-venue">
+                    <span class="badge">{e.data.institution}</span>
+                    {e.data.location ? ` · ${e.data.location}` : ""}
+                  </p>
+                  <p class="entry-desc">{e.data.description}</p>
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skill-groups reveal">
+          {
+            skills.groups.map((g) => (
+              <div class="skill-group">
+                <h3>{g.name}</h3>
+                <div class="tags">
+                  {g.tags.map((t) => <span class="tag">{t}</span>)}
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section id="certifications">
+        <h2 class="section-title">Certifications</h2>
+        <div class="entry-list">
+          {
+            certifications.map((c) => (
+              <article class="entry reveal">
+                <div class="entry-meta">{c.data.meta}</div>
+                <div class="entry-body">
+                  <h3 class="entry-title">{c.data.title}</h3>
+                  <p class="entry-desc">{c.data.description}</p>
+                  {c.data.links.length > 0 && (
+                    <div class="links">
+                      {c.data.links.map((l) => (
+                        <a href={l.href} target="_blank" rel="noopener">
+                          {l.label}
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                  {c.data.tags.length > 0 && (
+                    <div class="tags">
+                      {c.data.tags.map((t) => <span class="tag">{t}</span>)}
+                    </div>
+                  )}
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section id="gallery">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery reveal">
+          {
+            gallery.map((g) => (
+              <a href={g.data.image} data-lightbox data-caption={g.data.caption}>
+                <img src={g.data.image} alt={g.data.alt} loading="lazy" />
+              </a>
+            ))
+          }
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <span>&copy; {year} {site.name}</span>
+        <span>{site.location}</span>
+      </footer>
+    </main>
+  </div>
+</Base>

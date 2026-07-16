@@ -1,0 +1,35 @@
+{
+  "order": 1,
+  "title": "Holigo",
+  "category": "Mobile",
+  "badge": "Flutter",
+  "venue": "Production travel app",
+  "description": "A travel super-app for flights, buses, hotels, and more, shipped on the App Store and Play Store. At PT Aplikasi Liburan Indonesia I shipped and maintained cross-platform features for Android and iOS with GetX, spanning booking, partner, and account flows.",
+  "contributions": [
+    {
+      "title": "Flight module",
+      "text": "built multi-city flight booking: form UI states, core booking methods, and flow control, and authored the module's technical documentation (V2 & Multicity)."
+    },
+    {
+      "title": "Bus module",
+      "text": "developed the search and booking controller with its data flow, validation, and error handling."
+    },
+    {
+      "title": "Mitra (partner) module",
+      "text": "controller and state management, API integration, KYC verification, and fund-withdrawal logic."
+    },
+    {
+      "title": "Referral & deep links",
+      "text": "share-referral flow, Firebase Dynamic Links handling, and Android Install Referrer integration."
+    }
+  ],
+  "links": [
+    {
+      "label": "Screenshot",
+      "href": "/img/apps/holigo.png",
+      "lightbox": true,
+      "caption": "Holigo - Flutter travel app"
+    }
+  ],
+  "tags": ["Flutter", "GetX", "REST API", "Firebase"]
+}

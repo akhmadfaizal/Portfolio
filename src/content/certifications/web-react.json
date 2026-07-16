@@ -1,0 +1,13 @@
+{
+  "order": 2,
+  "meta": "Dicoding · 2025",
+  "title": "Web & React",
+  "description": "Front-end web development from fundamentals through building applications with React.",
+  "links": [
+    { "label": "Fundamental Web dengan React", "href": "https://dicoding.com/certificates/JMZVVQLQQZN9" },
+    { "label": "Aplikasi Web dengan React", "href": "https://dicoding.com/certificates/KEXL2EMEYZG2" },
+    { "label": "Front-End Web untuk Pemula", "href": "https://dicoding.com/certificates/72ZDKQMQJPYW" },
+    { "label": "Dasar Pemrograman Web", "href": "https://dicoding.com/certificates/NVP75020VXR0" }
+  ],
+  "tags": ["React", "JavaScript", "HTML/CSS"]
+}

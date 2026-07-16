@@ -1,0 +1,8 @@
+{
+  "groups": [
+    { "name": "Mobile", "tags": ["Flutter", "Dart", "GetX", "Clean Architecture", "Firebase", "SQLite", "Swift", "iOS", "Java"] },
+    { "name": "Web", "tags": ["React", "JavaScript", "HTML/CSS", "Tailwind", "PHP", "jQuery", "Python"] },
+    { "name": "Data & API", "tags": ["REST API", "JSON", "SQL", "MySQL"] },
+    { "name": "Tools", "tags": ["Git", "GitLab", "Figma", "Jira", "Taiga", "Trello"] }
+  ]
+}

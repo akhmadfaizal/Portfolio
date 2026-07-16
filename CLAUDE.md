@@ -2,9 +2,16 @@
 
 Guidance for AI agents working in this repository.
 
-**Project:** Ahmad Faidzal Ibrahim's personal portfolio — a static site built
-with vanilla HTML, CSS, and JavaScript, deployed via GitHub Pages. There is no
-build step; edit `index.html`, `css/style.css`, and `js/main.js` directly.
+**Project:** Ahmad Faidzal Ibrahim's personal portfolio, built with **Astro**.
+Content lives in `src/content/` (projects, experience, education, certifications,
+gallery — typed Content Collections) and `src/data/` (about, skills, site
+settings). The page is assembled in `src/pages/index.astro` with `src/layouts/`
+and styles in `src/styles/global.css`. Static assets are in `public/`. Build
+with `npm run build`; dev with `npm run dev`.
+
+Content editing will move to Keystatic (git-based CMS, GitHub mode) hosted on
+Vercel — see `docs/adr/0002-keystatic-git-based-cms.md`. Until that lands, edit
+the JSON content files directly.
 
 ## Agent skills
 

@@ -1,0 +1,12 @@
+{
+  "order": 1,
+  "meta": "Dicoding · 2025 - 2026",
+  "title": "Flutter & Dart",
+  "description": "Fundamentals of Flutter app development, including state management, networking, local storage, and testing.",
+  "links": [
+    { "label": "Fundamental Aplikasi Flutter", "href": "https://dicoding.com/certificates/6RPN7VEL8X2M" },
+    { "label": "Aplikasi Flutter untuk Pemula", "href": "https://dicoding.com/certificates/MEPJQ85JWX3V" },
+    { "label": "Pemrograman dengan Dart", "href": "https://dicoding.com/certificates/EYX4K1QDWPDL" }
+  ],
+  "tags": ["Flutter", "Dart"]
+}

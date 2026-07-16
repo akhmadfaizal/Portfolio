@@ -1,0 +1,15 @@
+{
+  "name": "Ahmad Faidzal Ibrahim",
+  "brandSub": "Flutter Developer",
+  "meta": {
+    "title": "Ahmad Faidzal Ibrahim",
+    "description": "Ahmad Faidzal Ibrahim (Afi) - Flutter Developer based in Tangerang, Indonesia. Cross-platform mobile and web development."
+  },
+  "wordmark": { "chars": "开发者", "pinyin": "Kāifāzhě" },
+  "socials": [
+    { "label": "GitHub", "href": "https://github.com/akhmadfaizal" },
+    { "label": "E-mail", "href": "mailto:ahmadfaizal.i.afi@gmail.com" },
+    { "label": "CV", "href": "/file/Cv.pdf" }
+  ],
+  "location": "Tangerang, Indonesia"
+}

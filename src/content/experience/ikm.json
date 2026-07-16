@@ -1,0 +1,9 @@
+{
+  "order": 2,
+  "period": "2020 - 2022",
+  "role": "Full Stack & Flutter Developer",
+  "company": "PT Indonesia Kreasi Mandiri & Notaris Ricky Teguh",
+  "location": "Tangerang",
+  "description": "Built Android apps with the Flutter SDK and delivered the Kemanaa app and web platform. Worked across the SDLC: flowcharts, ER diagrams, REST API and JSON integration, Firebase, relational databases, releases to the Play Store and App Store, and post-launch support.",
+  "tags": ["Flutter", "Firebase", "REST API", "PHP"]
+}

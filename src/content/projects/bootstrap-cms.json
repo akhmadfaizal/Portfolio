@@ -1,0 +1,13 @@
+{
+  "order": 5,
+  "title": "Bootstrap CMS",
+  "category": "Web",
+  "badge": "PHP",
+  "venue": "Content management interface",
+  "description": "A content management interface built solo on PHP, from the Bootstrap front end to the MySQL back end.",
+  "contributions": [],
+  "links": [
+    { "label": "Screenshot", "href": "/img/web/CMS Bootsrap 4.png", "lightbox": true, "caption": "Bootstrap CMS" }
+  ],
+  "tags": ["PHP", "Bootstrap", "MySQL"]
+}

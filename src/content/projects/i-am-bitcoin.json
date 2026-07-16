@@ -1,0 +1,14 @@
+{
+  "order": 3,
+  "title": "I Am Bitcoin",
+  "category": "Concept",
+  "badge": "Flutter",
+  "venue": "Single-page concept app",
+  "description": "A focused, single-page Flutter concept app that presents Bitcoin information with a clean and minimal layout. Designed and built solo, from layout to state and data display.",
+  "contributions": [],
+  "links": [
+    { "label": "GitHub", "href": "https://github.com/akhmadfaizal/IAmBitcoin" },
+    { "label": "Screenshot", "href": "/img/apps/I Am Bitcoin.png", "lightbox": true, "caption": "I Am Bitcoin - Flutter concept app" }
+  ],
+  "tags": ["Flutter", "Dart"]
+}

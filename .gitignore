@@ -1,4 +1,14 @@
+# legacy archives
 countUp.js-master.zip
 easy-pie-chart-master.zip
 OwlCarousel2-2.3.4.zip
 typed.js-master.zip
+
+# node / astro
+node_modules/
+dist/
+.astro/
+.vercel/
+.env
+.env.production
+.DS_Store

@@ -1,0 +1,13 @@
+{
+  "name": "Ahmad Faidzal Ibrahim",
+  "roleParts": [
+    { "text": "Flutter Developer" },
+    { "text": "Computer Science, BINUS University", "strong": true },
+    { "text": "Tangerang, Indonesia" }
+  ],
+  "bio": [
+    "Hi! I am Ahmad Faidzal Ibrahim, also known as Afi. I am a Flutter Developer with 4+ years of industry experience building robust, cross-platform mobile applications for Android and iOS. I enjoy turning ideas into apps and websites that feel clean and work reliably.",
+    "Most recently I spent nearly four years at PT Aplikasi Liburan Indonesia building Holigo, a travel super-app on the App Store and Play Store. Before that I worked across the full mobile and web stack, from interface design to connecting apps with back-end services and APIs.",
+    "I am currently pursuing a Bachelor of Computer Science at BINUS University to pair hands-on development with a stronger CS foundation. Beyond Flutter and Dart, I work with REST APIs, Clean Architecture, React, and standard front-end tooling, and I keep exploring how AI fits into everyday development."
+  ]
+}

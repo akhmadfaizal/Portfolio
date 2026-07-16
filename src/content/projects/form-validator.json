@@ -1,0 +1,13 @@
+{
+  "order": 6,
+  "title": "Form Validator",
+  "category": "Web",
+  "badge": "Vanilla JS",
+  "venue": "Form validation module",
+  "description": "A client-side form validation module built solo in plain JavaScript, with real-time input feedback.",
+  "contributions": [],
+  "links": [
+    { "label": "Screenshot", "href": "/img/web/Form Validator.png", "lightbox": true, "caption": "Form Validator" }
+  ],
+  "tags": ["JavaScript", "HTML", "CSS"]
+}

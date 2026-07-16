@@ -1,0 +1,19 @@
+{
+  "order": 2,
+  "title": "Kemanaa",
+  "category": "Mobile · Web",
+  "badge": "Flutter",
+  "venue": "Tourism app & web UI",
+  "description": "A tourism companion for exploring local places, food, and Indonesian souvenirs. At PT Indonesia Kreasi Mandiri I built both the mobile app and the web platform end to end.",
+  "contributions": [
+    { "title": "Mobile app", "text": "built the Flutter client with Firebase and SQLite." },
+    { "title": "Web platform", "text": "developed kemanaa.com with PHP, MySQL, Bootstrap, and jQuery." },
+    { "text": "Integrated REST APIs and JSON, produced SDLC artifacts (flowcharts, ER diagrams), and handled releases to the Play Store and App Store." }
+  ],
+  "links": [
+    { "label": "Play Store", "href": "https://play.google.com/store/apps/details?id=id.kemanaa.kemanaa_app&hl=id" },
+    { "label": "Website", "href": "https://kemanaa.com/" },
+    { "label": "Screenshot", "href": "/img/apps/pic_apps_kemanaa_1.jpg", "lightbox": true, "caption": "Kemanaa - Flutter app" }
+  ],
+  "tags": ["Flutter", "Firebase", "PHP", "MySQL"]
+}

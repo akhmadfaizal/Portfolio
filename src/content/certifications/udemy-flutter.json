@@ -1,0 +1,11 @@
+{
+  "order": 4,
+  "meta": "Udemy · 2021 - 2023",
+  "title": "Flutter Development",
+  "description": "Building Android and iOS applications with Flutter and Dart.",
+  "links": [
+    { "label": "Flutter & Dart for Android and iOS", "href": "https://ude.my/UC-8f939148-ce15-41ae-90b7-1c79c26c93fd" },
+    { "label": "Flutter Indonesia", "href": "https://ude.my/UC-7f266414-b566-4d6b-909c-f4e0fe07696a" }
+  ],
+  "tags": ["Flutter", "Dart"]
+}

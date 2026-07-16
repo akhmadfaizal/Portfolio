@@ -1,0 +1,9 @@
+{
+  "order": 1,
+  "period": "2022 - 2026",
+  "role": "Flutter Developer",
+  "company": "PT Aplikasi Liburan Indonesia",
+  "location": "Jakarta",
+  "description": "Designed and built mobile applications for Android and iOS (Holigo). Applied GetX for state management and dependency injection, collaborated with designers on Figma prototypes, used GitHub for version control, and ensured app quality, performance, and maintenance.",
+  "tags": ["Flutter", "GetX", "Figma", "GitHub"]
+}

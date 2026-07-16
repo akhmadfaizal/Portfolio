@@ -1,0 +1,14 @@
+{
+  "order": 4,
+  "title": "Photographyx",
+  "category": "Web",
+  "badge": "Vanilla JS",
+  "venue": "Photography site",
+  "description": "A responsive photography landing site designed and coded solo from scratch with plain HTML, CSS, and JavaScript.",
+  "contributions": [],
+  "links": [
+    { "label": "GitHub", "href": "https://github.com/akhmadfaizal/Photographyx" },
+    { "label": "Screenshot", "href": "/img/web/Photographyx-1.png", "lightbox": true, "caption": "Photographyx" }
+  ],
+  "tags": ["HTML", "CSS", "JavaScript"]
+}
